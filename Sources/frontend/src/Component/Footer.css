@@ -1,0 +1,34 @@
+.content-footer{
+    height: 300px;
+}
+.header-footer-name{
+    background-color:#78A6A3;
+}.text-center{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.color-1{
+    color: #ffff
+    ;
+}
+.container-contact{
+
+}
+.input-footer{
+    display: block;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 500px;
+}
+.text-area {
+    height: 100px;
+}
+.pading-footer{
+    padding: 30px 80px;
+}
+@media screen and (max-width: 760px) {
+    .pading-footer{
+        padding: 30px 10px;
+    }
+  }
