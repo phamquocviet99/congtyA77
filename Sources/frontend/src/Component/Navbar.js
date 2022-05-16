@@ -5,7 +5,7 @@ import { Navbar, Nav } from "react-bootstrap";
 
 function NavBar() {
   return (
-    <Navbar bg="light" stickey="top" expand="lg" collapseOnSelect>
+    <Navbar  bg="light" fixed="top"  expand="lg" collapseOnSelect>
       <div className="container">
         <Navbar.Brand href="/">
           <img 
