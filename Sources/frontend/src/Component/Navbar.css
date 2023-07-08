@@ -1,14 +1,28 @@
-.img-logo-navbar{
-  height: 60px;
+.img-logo-navbar {
+  height: 70px;
 }
-.nav-links{
-  font-size: 18px;
+.nav-links {
   margin-right: 10px;
 }
-.text{
-  font-weight:600;
-  
+.text {
+  font-weight: 400;
+  color: #ffffff;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
 }
-.text:hover{
-color: #abc93c;
+
+.text:hover {
+  font-size: 21px;
+  color:#ffd335
+}
+.container-header {
+  margin: 0px 40px;
+  display: flex;
+}
+.bg-myColor-2 {
+  background-color: #2d2d2de1;
+}
+.bg-myColor-1 {
+
+   background-color: #80aa41ee;
 }

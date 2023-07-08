@@ -6,7 +6,7 @@
 }
 .container-footer {
   position: relative;
-  height: 500px;
+  height: 430px;
 }
 .header-footer-name {
   background-color: #abc93c;
@@ -21,6 +21,7 @@
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-weight: 800;
 }
 .text-center-1 {
   padding-top: 18px;
@@ -34,15 +35,15 @@
   margin-top: 20px;
   width: 90%;
   max-width: 500px;
-  border-radius: 4px; 
+  border-radius: 4px;
   background-color: rgba(240, 248, 255, 0.64);
 }
 .btn-footer {
-    display: block;
-    margin-top: 20px;
-    width: 90%;
-    max-width: 500px;
-  }
+  display: block;
+  margin-top: 20px;
+  width: 90%;
+  max-width: 500px;
+}
 .text-area {
   height: 100px;
 }
@@ -51,6 +52,12 @@
 }
 .information-footer {
   margin-top: 20px;
+}
+.font-body-1 {
+  font-family: "Roboto Slab", serif;
+}
+.font-body-2 {
+  font-family: "EB Garamond", serif;
 }
 .line-footer {
   display: flex;
@@ -62,12 +69,13 @@
   max-width: 300px;
   text-align: left;
   color: black;
+  font-weight: 600;
 }
 .style-footer-i {
   font-family: didot-w01-italic, serif;
   font-style: italic;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
 }
 .container-contact {
   position: relative;
@@ -75,6 +83,7 @@
 }
 .padding-bottom-footer {
   margin-bottom: 30px;
+  font-weight: 600;
 }
 .color-2 {
   background-color: #292b2c;
@@ -94,6 +103,10 @@
 .fa-facebook {
   background-color: #3b5998;
   color: white;
+}
+.fa-facebook :hover {
+  background-color: white;
+  color: #3b5998;
 }
 
 .fa-youtube {

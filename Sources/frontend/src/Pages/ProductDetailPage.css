@@ -1,0 +1,33 @@
+.pagignation {
+  display: flex;
+  justify-content: end;
+}
+.related-products {
+  margin: 40px 0px;
+}
+.background-img-product {
+  background-image: url("../../public/WallpaperDog-985267.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  filter: brightness(150%);
+}
+.map-product {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 760px) {
+  .map-product {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+}

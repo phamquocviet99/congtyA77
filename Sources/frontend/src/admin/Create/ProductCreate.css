@@ -1,0 +1,17 @@
+.line-product{
+    height: 2px;
+    background-color: darkgray;
+}
+.title-add{
+    margin: 40px 0px;
+}
+.container-content{
+    margin: 30px 150px;
+}
+.content-body{
+    margin: 30px 20px;
+    padding: 40px 20px;
+}
+.size-textarea{
+    height: 180px;
+}

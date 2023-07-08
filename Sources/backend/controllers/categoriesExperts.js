@@ -1,5 +1,6 @@
 import CategoryExpertModel from "../models/categoriesExperts.js";
 import ExpertModel from "../models/expert.js";
+import {removeExpert} from "./expert.js"
 
 //Function GetOne
 export const get = async (req, res) => {
@@ -56,11 +57,7 @@ export const remove = async (req, res) => {
     });
     if (experts.length > 0) {
       for (const expert of experts) {
-         expert.image?.map((img) => {
-          const public_id = img._id;
-          cloudinary.uploader.destroy(public_id);
-        });
-         await expert.remove();
+        await removeExpert(expert._id)
       }
     }
     await CategoryExpertModel.findByIdAndDelete({ _id: req.params.id });

@@ -1,0 +1,162 @@
+.background-img-product-details {
+  background-image: url("../../public/warehouse-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+  filter: brightness(150%);
+}
+.category-title {
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+.line-category {
+  height: 1.5px;
+  background-color: darkgray;
+  /* margin-top: 10px; */
+}
+
+.item-brand {
+  transform: skew(-20deg);
+  background: #e0e7e4;
+  margin: 10px 10px;
+  color: #274d72;
+  margin-top: 40px;
+}
+.item-brand.active {
+  transform: skew(-20deg);
+  background: #274d72;
+
+  color: white;
+}
+.item-brand:hover {
+  background: #274d72;
+  color: white;
+}
+.text-item-category-1 {
+  transform: skew(20deg);
+  padding-left: 20px;
+  padding-top: 15px;
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+.text-item-category-2 {
+  transform: skew(20deg);
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.list-product {
+  margin: 30px 10px;
+}
+.card-product-1 {
+  border: none;
+  box-shadow: 10px 10px 8px #cdcdcd;
+}
+.card-body {
+  background-color: #f2f2f2;
+}
+.page-link {
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  font-weight: 500;
+  color: darkgreen;
+  padding-top: 8px;
+}
+.category-item {
+  height: 70px;
+  transform: skew(20deg);
+  background: #c7d7d0;
+  margin: 10px 25px;
+  color: #466742;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.category-item:hover {
+  height: 70px;
+  transform: skew(20deg);
+  background: #466742;
+  margin: 10px 25px;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.category-item.active {
+  height: 70px;
+  transform: skew(20deg);
+  background: #466742;
+  margin: 10px 20px;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.text-item-category {
+  transform: skew(-20deg);
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 24px;
+  margin-bottom: 7px;
+  text-align: center;
+}
+.card-product-product {
+  margin: 0px 10px;
+  margin-bottom: 50px;
+  box-shadow: 7px 7px 7px rgb(115, 115, 115);
+}
+
+.img-product-card {
+  height: 300px;
+}
+.title-card-product {
+  text-align: center;
+  color: #466742;
+}
+.pagignation {
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+}
+.container-act {
+  padding: 0px 120px;
+}
+
+.line-product-list {
+  height: 8px;
+  width: 300px;
+  background-color: #099d02;
+  margin-top: 20px;
+}
+
+.background-img-activity {
+  background-image: url("https://res.cloudinary.com/dwgo7yiow/image/upload/v1653109413/A77_Images/BackGround/atlwest-communications-strategies-that-connect-iStock-590592392_mim66s.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  filter: brightness(100%);
+}
+.heigh-body-card {
+  height: 80px;
+}
+.heigh-title-card{
+  height: 50px;
+}
+.limit-text-act {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 20px;
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+@media screen and (max-width: 760px) {
+  .container-act {
+    padding: 0px 10px;
+  }
+  .margin-product-pvsd{
+    margin-left: 20px;
+  }
+}

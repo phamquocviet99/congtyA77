@@ -1,0 +1,36 @@
+
+.background-img-login {
+  background-image: url("../../public/university-of-east-anglia-promo-slider.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+  filter: brightness(120%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-login {
+  text-align: center;
+  padding: 40px 40px;
+  background-color: rgba(169, 169, 169, 0.657);
+  border-radius: 25px;
+}
+.btn-login {
+  height: 50px;
+  width: 150px;
+}
+.input-login {
+  height: 50px;
+  width: 400px;
+}
+
+@media screen and (max-width: 760px) {
+  .btn-login {
+    height: 30px;
+    width: 120px;
+  }
+  .input-login {
+    height: 50px;
+    width: 150px;
+  }
+}

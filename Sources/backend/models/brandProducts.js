@@ -10,9 +10,17 @@ const schema = new mongoose.Schema(
         type: String,
         required: true,
       },
+      idCategory: {
+        type: String,
+        required: true,
+      },
+      nameCategory: {
+        type: String,
+        required: true,
+      },
   
     },
     { timestamps: true }
   );
 
-  export default  mongoose.model('categoriesFieldOfActivity', schema);
+  export default  mongoose.model('brandProducts', schema);

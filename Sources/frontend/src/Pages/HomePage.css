@@ -1,7 +1,7 @@
 .img-background {
   object-fit: cover;
-  height: 700px;
-  filter: brightness(75%);
+  height: 750px;
+  filter: brightness(100%);
 }
 
 .font-content-1 {
@@ -15,22 +15,7 @@
   font-size: 40px;
   font-weight: 700;
 }
-.container-name-logo-about {
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-between;
-}
-.format-logo-about {
-  height: 50px;
-}
-.vertical-line {
-  width: 7px;
 
-  background-color: darkgray;
-}
-.right-about {
-  display: flex;
-}
 .font-1-about {
   font-size: 20px;
   font-weight: 800;
@@ -38,16 +23,36 @@
   font-family: "Times New Roman", Times, serif;
   margin-bottom: 8px;
 }
+.font-body-1{
+  font-family: 'Roboto Slab', serif;
+}
+.font-body-2{
+  font-family: "EB Garamond", serif;
+}
 .content-about {
   margin-top: 30px;
 }
 .font-2-about {
-  font-size: 30px;
-  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+  font-family: 'Roboto Slab', serif;
   text-align: center;
 }
-.display-block {
-  margin-left: 20px;
+.font-a {
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+  font-size: 40px;
+  color: #02353c;
+}
+.font-b {
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+  font-size: 30px;
+  color: #02353c;
+}
+
+.content-second-about {
+  text-align: center;
+  margin: 30px 0;
 }
 
 .horizontal-line {
@@ -57,7 +62,7 @@
   margin-top: 20px;
 }
 .container-activity {
-  background-color: #65ae82;
+  background-color: #269369;
 }
 .content-activity {
   padding-top: 70px;
@@ -116,18 +121,158 @@
   background-color: white;
   padding: 70px 0px;
 }
-
-.card-product{
-    margin-top: 50px;
-    box-shadow: 10px 10px 8px #888888;
+.card-product {
+  margin-top: 50px;
+  box-shadow: 10px 10px 8px #888888;
 }
-.card-product:hover{
-background-color: #b4ff2956;
+.card-product:hover {
+  background-color: #b4ff2956;
+}
+.container-it {
+  height: 680px;
+  display: flex;
+  justify-content: end;
+  background-image: url("../Component//logo//computer-screens.jpg");
+  /* Center and scale the image nicely */
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: white;
 }
 
+.it-2 {
+  width: 15%;
+  border-bottom: 680px solid #02353c;
+  border-left: 250px solid transparent;
+}
+.it-3 {
+  width: 60%;
+  height: 100%;
+  background-color: #02353c;
+  padding: 40px 20px;
+}
+.line-it {
+  width: 100px;
+  height: 10px;
+  background-color: #55a79a;
+  margin-bottom: 20px;
+}
+.round-icon {
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  background-color: #55a79a;
+  margin-right: 20px;
+}
+.icon-it {
+  font-size: 40px;
+  color: white;
+}
+.font-content-it {
+  font-size: 15px;
+  max-width: 550px;
+  color: rgb(186, 186, 186);
+  margin-top: 10px;
+}
+.container-supplier {
+  height: 300px;
+  background-color: #888888;
+}
+.icon-sup {
+  font-size: 100px;
+  justify-items: center;
+}
+/* .cc {
+  background-color: aqua;
+} */
 
+.our-supplier-home {
+  margin-top: 200px;
+  border: 2px solid #269369;
+}
+.back-c-left {
+  padding: 50px;
+  background-color: #269369;
+}
+.left-partner {
+  text-align: end;
+  margin-top: 50px;
+  padding-right: 30px;
+}
+.right-partner {
+  margin: 10px 30px;
+}
+.img-1-partner {
+  height: 220px;
+  width: 300px;
+}
+.img-2-partner {
+  margin-top: 30px;
+  height: 120px;
+  width: 350px;
+}
+.img-3-partner {
+  margin-left: 40px;
+  margin-top: 70px;
+  height: 100%;
+  width: 85%;
+}
+.line-partner {
+  height: 8px;
+  width: 220px;
+  background-color: white;
+}
+
+.font-content-partner {
+  font-size: 19px;
+  line-height: 40px;
+  font-weight: 500;
+  font-style: italic;
+  color: #010053;
+}
+.btn-partner {
+  height: 60px;
+  width: 200px;
+}
 
 @media screen and (max-width: 760px) {
+  .title-activity-2-left {
+    font-size: 13px;
+    text-align: right;
+    color: white;
+  }
+  .img-background {
+    object-fit: cover;
+    height: 500px;
+    filter: brightness(100%);
+  }
+  .font-content-partner {
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 500;
+    font-style: italic;
+  }
+  .font-content-it {
+    font-size: 14px;
+    max-width: 550px;
+    color: rgb(186, 186, 186);
+    margin-top: 10px;
+  }
+  .container-it {
+    display: flex;
+    justify-content: end;
+    height: 100%;
+    background-color: white;
+  }
+
+  .it-2 {
+    display: none;
+  }
+  .it-3 {
+    width: 100%;
+
+    background-color: #343a40;
+  }
   .font-home-1 {
     font-size: 25px;
     font-weight: 700;
@@ -169,6 +314,7 @@ background-color: #b4ff2956;
     margin-right: 40px;
     object-fit: cover;
   }
+
   .title-activity-1-right {
     font-size: 18px;
     text-align: left;
@@ -185,8 +331,39 @@ background-color: #b4ff2956;
     color: white;
   }
   .font-2-about {
-    font-size: 14px;
+    font-size: 12px;
     font-family: "Times New Roman", Times, serif;
     text-align: center;
+  }
+  .img-1-partner {
+    height: 220px;
+    width: 320px;
+  }
+  .img-2-partner {
+    margin-top: 30px;
+    height: 120px;
+    width: 280px;
+  }
+  .img-3-partner {
+    margin-left: 40px;
+    margin-top: 20px;
+    height: 130%;
+    width: 80%;
+  }
+  .font-a {
+    font-family: "EB Garamond", serif;
+    font-style: italic;
+    font-size: 30px;
+    color: #02353c;
+  }
+  .font-2-about {
+    font-size: 12px;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+  }
+  .title-activity-1-left {
+    font-size: 18px;
+    text-align: right;
+    color: white;
   }
 }

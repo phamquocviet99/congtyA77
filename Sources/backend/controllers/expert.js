@@ -8,6 +8,12 @@ import fs from "fs";
 export const get = async (req, res) => {
   try {
     const expertes = await ExpertModel.find();
+    if (expertes.length > 0) {
+      for (const exp of expertes) {
+        const category = await CategoryExpertModel.findById(exp.idCategory);
+        exp.nameCategory = category.name;
+      }
+    }
     res.status(200).json({ count: expertes.length, data: expertes });
   } catch (err) {
     res.status(500).json(err);
@@ -45,11 +51,11 @@ export const post = async (req, res) => {
 //Function Update Data
 export const update = async (req, res) => {
   try {
-    const category = await CategoryExpertModel.findById(req.body.idCategory)
+    const category = await CategoryExpertModel.findById(req.body.idCategory);
     // delete old image
     const oldExpert = await ExpertModel.findById(req.params.id);
     const updateExpert = req.body;
-    updateExpert.nameCategory=category.name;
+    updateExpert.nameCategory = category.name;
     if (updateExpert.changeImg == "true") {
       const public_id = oldExpert.image._id;
       await cloudinary.uploader.destroy(public_id);
@@ -99,5 +105,16 @@ export const getByIdCategory = async (req, res) => {
     res.status(200).json({ count: experts.length, data: experts });
   } catch (err) {
     res.status(500).json(err);
+  }
+};
+export const removeExpert = async (id) => {
+  try {
+    const oldExpert = await ExpertModel.findById(id);
+    const public_id = oldExpert.image._id;
+    await cloudinary.uploader.destroy(public_id);
+    await oldExpert.remove();
+    return true;
+  } catch (err) {
+    return false;
   }
 };

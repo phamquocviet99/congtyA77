@@ -25,7 +25,7 @@ function Footer() {
 
       <div className="content-footer">
         <div className="header-footer-name">
-          <h5 className="text-center color-1">CONTACT US</h5>
+          <h5 className="text-center font-body-1 color-1">CONTACT US</h5>
         </div>
         <div className="container-contact">
           <div className="container pading-footer">
@@ -48,32 +48,32 @@ function Footer() {
                 />
                 <button
                   type="button"
-                  className="btn btn-outline-danger btn-lg btn-block btn-footer"
+                  className="btn btn-primary btn-lg btn-block btn-footer"
                 >
                   Gửi thư
                 </button>
               </div>
               <div className="col-sm-6">
                 <div className="container information-footer">
-                  <h5 className="padding-bottom-footer">Công ty TNHH A77</h5>
+                  <h5 className="padding-bottom-footer font-body-1">Công ty TNHH A77</h5>
                   <div className="line-footer">
                     <i className="material-icons ">phone</i>
-                    <p className="text-footer">{infor.phone}</p>
+                    <p className="text-footer font-body-1">{infor.phone}</p>
                   </div>
                   <hr className="line" />
                   <div className="line-footer">
                     <i className="material-icons ">email</i>
-                    <p className="text-footer">{infor.email}</p>
+                    <p className="text-footer font-body-1">{infor.email}</p>
                   </div>
                   <hr />
                   <div className="line-footer">
                     <i className="material-icons ">language</i>
-                    <p className="text-footer">{infor.website}</p>
+                    <p className="text-footer font-body-1">{infor.website}</p>
                   </div>
                   <hr />
                   <div className="line-footer">
                     <i className="material-icons ">home</i>
-                    <p className="text-footer">{infor.address}</p>
+                    <p className="text-footer font-body-1">{infor.address}</p>
                   </div>
                 </div>
               </div>

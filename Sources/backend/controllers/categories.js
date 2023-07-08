@@ -1,5 +1,7 @@
 import CategoryModel from "../models/categories.js";
 import ProductModel from "../models/products.js";
+import { removeBrand } from "../controllers/brandProduct.js";
+import BrandModel from "../models/brandProducts.js";
 import cloudinary from "cloudinary";
 //Function GetOne
 export const get = async (req, res) => {
@@ -51,17 +53,13 @@ export const update = async (req, res) => {
 //Function Delete Data
 export const remove = async (req, res) => {
   try {
-    const products = await ProductModel.find({
+    const brands = await BrandModel.find({
       id: 0,
       idCategory: req.params.id,
     });
-    if (products.length > 0) {
-      for (const product of products) {
-        product.image?.map((img) => {
-          const public_id = img._id;
-          cloudinary.uploader.destroy(public_id);
-        });
-         await product.remove();
+    if (brands.length > 0) {
+      for (const brand of brands) {
+        removeBrand(brand._id);
       }
     }
     await CategoryModel.findByIdAndDelete({ _id: req.params.id });

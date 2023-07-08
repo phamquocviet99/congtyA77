@@ -15,6 +15,8 @@ const schema = mongoose.Schema({
     nameCategory: { type: String, require: false },
     description: { type: String, require: false },
     idCategory: { type: String, require: true },
+    nameBrand: { type: String, require: false },
+    idBrand: { type: String, require: true },
     price :{ type: String, require: true },
 });
 

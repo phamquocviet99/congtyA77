@@ -1,0 +1,17 @@
+.background-img-supplier-details {
+    background-image: url("../../public/partner-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    filter: brightness(130%);
+  }
+  .title-partner{
+    margin-top: 50px;
+  }
+  .body-partner{
+    margin: 50px 0px;
+  }
+  .img-partner{
+    height: 200px;
+    object-fit: contain;
+  }

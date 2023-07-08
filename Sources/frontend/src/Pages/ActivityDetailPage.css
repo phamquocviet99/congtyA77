@@ -1,0 +1,61 @@
+.background-img-activity-details {
+  background-image: url("../../public/hotadung.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  filter: brightness(130%);
+}
+.background-img-activity-details {
+  position: relative;
+}
+.img-act-a {
+  position: absolute;
+  z-index: 0;
+  top: 460px;
+  display: flex;
+}
+.img-act {
+  height: 280px;
+  width: 280px;
+  object-fit: cover;
+  border: 10px solid #ffffff;
+}
+.title-act {
+  margin-top: 180px;
+  margin-left: 50px;
+}
+.content-act {
+  width: 100%;
+  border: 2px solid #cecece;
+  border-radius: 10px;
+  padding: 30px 30px;
+  margin: 20px 10px;
+}
+.related-act {
+  text-align: center;
+margin: 10px 10px;
+margin-bottom: 30px;
+}
+.line-act{
+  height: 2px;
+  background-color: black;
+  width: 80%; 
+  margin : 20px auto;
+
+}
+.limit-text-ac{
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 20px;
+    -webkit-line-clamp: 5;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+@media screen and (max-width: 760px) {
+  .img-act {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+  }
+}
